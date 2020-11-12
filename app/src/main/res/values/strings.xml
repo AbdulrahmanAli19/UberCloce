@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Uber</string>
+    <string name="register_message">let\'s start with create your account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="text_continue">Continue</string>
 </resources>
