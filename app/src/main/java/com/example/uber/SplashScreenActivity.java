@@ -75,7 +75,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         database = FirebaseDatabase.getInstance();
-        driverIfnoRef = database.getReference(Common.DRIVER_INFO_REFERANCE);
+        driverIfnoRef = database.getReference(Common.DRIVER_INFO_REFERENCE);
 
         providers = Arrays.asList(
                 new AuthUI.IdpConfig.PhoneBuilder().build(),

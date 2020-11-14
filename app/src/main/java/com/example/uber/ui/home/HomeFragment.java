@@ -107,8 +107,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
     @SuppressLint("MissingPermission")
     private void init() {
         onlineRef = FirebaseDatabase.getInstance().getReference().child(".info/connected");
-        driverLocationRef = FirebaseDatabase.getInstance().getReference(Common.DRIVER_LOCATION_REFERANCE);
-        currentUserRef = FirebaseDatabase.getInstance().getReference(Common.DRIVER_LOCATION_REFERANCE)
+        driverLocationRef = FirebaseDatabase.getInstance().getReference(Common.DRIVER_LOCATION_REFERENCE);
+        currentUserRef = FirebaseDatabase.getInstance().getReference(Common.DRIVER_LOCATION_REFERENCE)
                 .child(FirebaseAuth.getInstance().getCurrentUser().getUid());
         geoFire = new GeoFire(driverLocationRef);
 
