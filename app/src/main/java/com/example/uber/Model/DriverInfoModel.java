@@ -4,6 +4,7 @@ public class DriverInfoModel {
     private String lastName;
     private String fistName;
     private String phoneNumber;
+    private String avatar;
     private double rate;
 
     public DriverInfoModel() {
@@ -39,5 +40,13 @@ public class DriverInfoModel {
 
     public void setRate(double rate) {
         this.rate = rate;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 }
