@@ -127,7 +127,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
 
                 LatLng newPosition = new LatLng(locationResult.getLastLocation().getLatitude(),
                         locationResult.getLastLocation().getLongitude());
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(newPosition, 19f));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(newPosition, 18f));
 
                 //updateLocation
                 geoFire.setLocation(FirebaseAuth.getInstance().getCurrentUser().getUid()
@@ -165,7 +165,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
                                 fusedLocationProviderClient.getLastLocation()
                                         .addOnSuccessListener(location -> {
                                             LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-                                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 19f));
+                                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 18f));
                                         }).addOnFailureListener(e -> {
                                     Log.d(TAG, "onMyLocationButtonClick: " + e.getMessage());
                                     showToast(e.getMessage());
