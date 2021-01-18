@@ -73,7 +73,6 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     private void init() {
-
         ButterKnife.bind(this);
 
         database = FirebaseDatabase.getInstance();

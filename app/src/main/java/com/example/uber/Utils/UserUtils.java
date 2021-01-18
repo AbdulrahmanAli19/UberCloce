@@ -35,7 +35,7 @@ public class UserUtils {
                 .setValue(tokenModel)
                 .addOnSuccessListener(aVoid -> {
                     Toast.makeText(context, "Token updated", Toast.LENGTH_SHORT).show();
-                })
-                .addOnFailureListener(e -> Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT).show());
+                }).addOnFailureListener(e -> Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT)
+                .show());
     }
 }

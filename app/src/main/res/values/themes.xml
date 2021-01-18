@@ -20,9 +20,9 @@
     </style>
 
     <style name="LoginScreen" parent="FirebaseUI">
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
 
         <item name="colorButtonNormal">@color/colorAccent</item>
         <item name="colorControlNormal">@color/white</item>
